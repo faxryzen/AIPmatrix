@@ -32,6 +32,7 @@ int main()
   if (!std::cin.good())
   {
     std::cerr << "failure to read int\n";
+    destroyMatrix(table, M);
     return 1;
   }
   std::cout << "Your matrix\n";
