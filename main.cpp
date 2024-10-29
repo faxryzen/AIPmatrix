@@ -13,7 +13,7 @@ int main()
     return 1;
   }
 
-  int** table = nullptr;
+  int ** table = nullptr;
 
   try
   {
