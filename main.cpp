@@ -15,11 +15,8 @@ int main()
 
   Matrix first_table(M, N);
   first_table.print(std::cout);
-
   std::cout << "Hey, let's add numbers there\n";
-  
   first_table.input(std::cin);
-
   std::cout << "Cool, let's try new size\n";
   std::cin >> M >> N;
 
@@ -31,10 +28,10 @@ int main()
 
   first_table.size(M, N);
   first_table.print(std::cout);
-
   std::cout << "Let's copy this matrix\n";
-  
+
   Matrix second_table { first_table };
+
   second_table.print(std::cout);
   std::cout << "Here new width and height\n";
   std::cout << second_table.width() << " " << second_table.height() << '\n';
