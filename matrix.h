@@ -1,6 +1,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 #include <cstddef>
+#include <iostream>
 
 struct Matrix 
 {
@@ -27,8 +28,11 @@ struct Matrix
 
 int** create(size_t m, size_t n);
 void destroy(int ** t, size_t m);
-void read(const int ** t, size_t m, size_t n);
-void print(const int * const * t, size_t m, size_t n);
-void construct(const int ** t, size_t m, size_t n);
+void input(std::istream & in, int ** t, size_t m, size_t n);
+void print(std::ostream & out, const int * const * t, size_t m, size_t n);
+int ** size(int ** t, size_t & m, size_t & n, size_t new_m, size_t new_n);
+void construct(int ** t, size_t m, size_t n);
+int ** copy(int ** t, size_t m, size_t n);
+
 
 #endif

@@ -1,5 +1,4 @@
 #include "matrix.h"
-#include <iostream>
 
 Matrix::~Matrix()
 {
@@ -25,7 +24,7 @@ void Matrix::size(size_t m, size_t n)
   m_ = m;
   n_ = n;
 }
-void Matrix::print(std::ostream & out)
+void Matrix::print(std::ostream & out) const
 {
   ::print(out, t_, m_, n_);
 }

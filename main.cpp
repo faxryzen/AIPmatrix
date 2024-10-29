@@ -13,8 +13,9 @@ int main()
     return 1;
   }
 
-  int ** table = nullptr;
-
+  Matrix table(M, N);
+  table.print(std::cout);
+/*
   try
   {
     table = createMatrix(M, N);
@@ -38,4 +39,5 @@ int main()
   std::cout << "Your matrix\n";
   printMatrix(table, M, N);
   destroyMatrix(table, M);
+*/
 }
