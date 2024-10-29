@@ -20,7 +20,7 @@ struct Matrix
     {
       return n_;
     }
-    size_t hight() const
+    size_t height() const
     {
       return m_;
     }
@@ -30,7 +30,7 @@ int** create(size_t m, size_t n);
 void destroy(int ** t, size_t m);
 void input(std::istream & in, int ** t, size_t m, size_t n);
 void print(std::ostream & out, const int * const * t, size_t m, size_t n);
-int ** size(int ** t, size_t & m, size_t & n, size_t new_m, size_t new_n);
+int ** size(int ** t, size_t m, size_t n, size_t new_m, size_t new_n);
 void construct(int ** t, size_t m, size_t n);
 int ** copy(int ** t, size_t m, size_t n);
 
