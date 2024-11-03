@@ -16,7 +16,11 @@ int main()
   Matrix first_table(M, N);
   first_table.print(std::cout);
   std::cout << "Hey, let's add numbers there\n";
-  first_table.input(std::cin);
+  if (!first_table.input(std::cin))
+  {
+    std::cerr << "failure to read numbers\n";
+    return 1;
+  };
   std::cout << "Cool, let's try new size\n";
   std::cin >> M >> N;
 

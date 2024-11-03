@@ -15,7 +15,7 @@ struct Matrix
     Matrix(const Matrix & torig_);
     void size(size_t m, size_t n);
     void print(std::ostream & out) const;
-    void input(std::istream & in) const;
+    std::istream & input(std::istream & in) const;
     size_t width() const
     {
       return n_;
@@ -28,7 +28,7 @@ struct Matrix
 
 int** create(size_t m, size_t n);
 void destroy(int ** t, size_t m);
-void input(std::istream & in, int ** t, size_t m, size_t n);
+std::istream & input(std::istream & in, int ** t, size_t m, size_t n);
 void print(std::ostream & out, const int * const * t, size_t m, size_t n);
 int ** size(int ** t, size_t m, size_t n, size_t new_m, size_t new_n);
 void construct(int ** t, size_t m, size_t n);

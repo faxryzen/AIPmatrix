@@ -29,9 +29,10 @@ void Matrix::print(std::ostream & out) const
 {
   ::print(out, t_, m_, n_);
 }
-void Matrix::input(std::istream & in) const
+std::istream & Matrix::input(std::istream & in) const
 {
   ::input(in, t_, m_, n_);
+  return in;
 }
 
 void destroy(int ** t, size_t m)
@@ -62,7 +63,7 @@ int ** create(size_t m, size_t n)
   return t;
 }
 
-void input(std::istream & in, int ** t, size_t m, size_t n)
+std::istream & input(std::istream & in, int ** t, size_t m, size_t n)
 {
   for (size_t i = 0; i < m; ++i)
   {
@@ -71,6 +72,7 @@ void input(std::istream & in, int ** t, size_t m, size_t n)
       in >> t[i][j];
     }
   }
+  return in;
 }
 
 void print(std::ostream & out, const int * const * t, size_t m, size_t n)
