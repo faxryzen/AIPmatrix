@@ -9,7 +9,7 @@ int main()
 
   if (!std::cin.good())
   {
-    std::cerr << "failure to read int\n";
+    std::cerr << "failure to read size\n";
     return 1;
   }
 
@@ -22,7 +22,7 @@ int main()
 
   if (!std::cin.good())
   {
-    std::cerr << "failure to read int\n";
+    std::cerr << "failure to read size\n";
     return 1;
   }
 
